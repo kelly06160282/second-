@@ -1,0 +1,215 @@
+const byte LEDs[] = {10, 11, 12, 13, 14, 15, 16, 17};
+	byte index = 0;
+	int i;
+
+	void setup()
+	{
+   		pinMode(6, INPUT);
+  		for (byte i = 0; i < 8; i++)
+  		{
+    			pinMode(LEDs[i], OUTPUT);
+  		}
+	}
+
+	void loop()
+	{
+  		if (digitalRead(6) == 0)
+  		{
+    			for (i = 0; i < 8; i++)
+    			{
+      				digitalWrite(LEDs[i], HIGH);
+      				delay(100);
+      				digitalWrite(LEDs[i], LOW);
+      				delay(100);
+    			}
+
+    			for (i = 7; i >= 0; i--)
+    			{
+      				digitalWrite(LEDs[i], HIGH);
+     			 	delay(100);
+      				digitalWrite(LEDs[i], LOW);
+      				delay(100);
+    			}
+
+  		}
+
+  		else
+  		{
+    			for (i = 0; i < 8; i++) //全亮
+    			{
+      				digitalWrite(LEDs[i], HIGH);
+    			}
+    			delay(100);
+    
+			for (i = 0; i < 8; i++)
+    			{
+      				digitalWrite(LEDs[i], LOW);
+    			}
+    			delay(100);
+
+    			for (i = 0; i < 8; i++)
+    			{
+      				digitalWrite(LEDs[i], HIGH); //全暗
+    			}
+    			delay(100);
+    
+			for (i = 0; i < 8; i++)
+    			{
+      				digitalWrite(LEDs[i], LOW);
+    			}
+    			delay(100);
+    
+			for (i = 0; i < 8; i++)
+    			{
+      				digitalWrite(LEDs[i], HIGH);
+      				delay(100);
+      				digitalWrite(LEDs[i], LOW);
+      				delay(100);
+    			}
+    			for (i = 0; i < 8; i++)
+    			{		
+      				digitalWrite(LEDs[i], HIGH);
+      				delay(100);
+      				digitalWrite(LEDs[i], LOW);
+      				delay(100);
+    			}
+    			
+			for (i = 0; i < 8; i++)
+    			{
+      				digitalWrite(LEDs[i], HIGH);
+      				delay(100);
+      				digitalWrite(LEDs[i], LOW);
+      				delay(100);
+    			}
+    
+			for (i = 0; i < 8; i++)
+    			{
+      				digitalWrite(LEDs[i], HIGH);
+      				delay(100);
+      				digitalWrite(LEDs[i], LOW);
+      				delay(100);
+    			}
+
+    			for (i = 0; i < 8; i++)
+    			{
+      				digitalWrite(LEDs[i], HIGH);
+      				delay(100);
+      				digitalWrite(LEDs[i], LOW);
+      				delay(100);
+    			}
+
+    			for (i = 0; i < 8; i++)
+    			{
+     				digitalWrite(LEDs[i], HIGH);
+      				delay(100);
+      				digitalWrite(LEDs[i], LOW);
+      				delay(100);
+    			}
+
+    			for (i = 0; i < 8; i++)
+    			{
+      				digitalWrite(LEDs[i], HIGH);
+      				delay(100);
+      				digitalWrite(LEDs[i], LOW);
+      				delay(100);
+    			}
+
+    			for (i = 0; i < 8; i++)
+    			{
+      				digitalWrite(LEDs[i], HIGH);
+      				delay(100);
+      				digitalWrite(LEDs[i], LOW);
+      				delay(100);
+    			}
+    
+			for (i = 0; i < 8; i++)
+    			{
+      				digitalWrite(LEDs[i], HIGH);
+    			}
+    			delay(100);
+    
+			for (i = 0; i < 8; i++)
+    			{
+      				digitalWrite(LEDs[i], LOW);
+    			}
+    			delay(100);
+   
+ 			for (i = 0; i < 8; i++)
+    			{
+      				digitalWrite(LEDs[i], HIGH);
+    			}
+    			delay(100);
+   
+ 			for (i = 0; i < 8; i++)
+    			{
+      				digitalWrite(LEDs[i], LOW);
+    			}
+    			delay(100);
+   
+ 			for (i = 7; i >= 0; i--)
+    			{
+      				digitalWrite(LEDs[i], HIGH);
+      				delay(100);
+      				digitalWrite(LEDs[i], LOW);
+     				 delay(100);
+    			}
+    
+			for (i = 7; i >= 0; i--)
+    			{
+      				digitalWrite(LEDs[i], HIGH);
+      				delay(100);
+      				digitalWrite(LEDs[i], LOW);
+      				delay(100);
+    			}
+
+    			for (i = 7; i >= 0; i--)
+    			{
+      				digitalWrite(LEDs[i], HIGH);
+      				delay(100);
+     				digitalWrite(LEDs[i], LOW);
+      				delay(100);
+    			}
+
+    			for (i = 7; i >= 0; i--)
+    			{
+      				digitalWrite(LEDs[i], HIGH);
+     				delay(100);
+     				digitalWrite(LEDs[i], LOW);
+      				delay(100);
+    			}
+
+    			for (i = 7; i >= 0; i--)
+    			{
+      				digitalWrite(LEDs[i], HIGH);
+      				delay(100);
+      				digitalWrite(LEDs[i], LOW);
+      				delay(100);
+    			}
+
+    			for (i = 7; i >= 0; i--)
+    			{
+      				digitalWrite(LEDs[i], HIGH);
+      				delay(100);
+      				digitalWrite(LEDs[i], LOW);
+      				delay(100);
+    			}
+
+    			for (i = 7; i >= 0; i--)
+    			{
+      				digitalWrite(LEDs[i], HIGH);
+      				delay(100);
+      				digitalWrite(LEDs[i], LOW);
+      				delay(100);
+    			}
+
+    			for (i = 7; i >= 0; i--)
+    			{
+      				digitalWrite(LEDs[i], HIGH);
+      				delay(100);
+      				digitalWrite(LEDs[i], LOW);
+      				delay(100);
+    			}
+
+    			delay(100);
+  		}
+	}
